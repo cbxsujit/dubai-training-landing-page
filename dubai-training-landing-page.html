@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Your Business with AI & Automation | Dubai SME Training</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #000 0%, #333 50%, #e51e25 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(229, 30, 37, 0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .subtitle {
+            font-size: 24px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .hero .highlight {
+            background: #e51e25;
+            padding: 5px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            background: #e51e25;
+            color: white;
+            padding: 18px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(229, 30, 37, 0.4);
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(229, 30, 37, 0.6);
+            background: #c41e3a;
+        }
+        
+        .cta-button.secondary {
+            background: white;
+            color: #e51e25;
+            border: 2px solid #e51e25;
+        }
+        
+        .cta-button.secondary:hover {
+            background: #f8f8f8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .section {
+            padding: 60px 20px;
+        }
+        
+        .section-dark {
+            background: #333;
+            color: white;
+        }
+        
+        .section-light {
+            background: #f8f8f8;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #e51e25;
+            font-weight: bold;
+        }
+        
+        .pain-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pain-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-left: 4px solid #e51e25;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .pain-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(229, 30, 37, 0.3);
+        }
+        
+        .pain-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .pain-card h3 {
+            color: #e51e25;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .program-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .program-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 40px rgba(229, 30, 37, 0.3);
+        }
+        
+        .program-header {
+            background: linear-gradient(135deg, #e51e25 0%, #c41e3a 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .program-header.black {
+            background: linear-gradient(135deg, #333 0%, #000 100%);
+        }
+        
+        .program-header h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .program-price {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .program-duration {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .program-body {
+            padding: 30px;
+        }
+        
+        .program-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .program-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            color: #333;
+        }
+        
+        .program-features li::before {
+            content: "✓";
+            color: #e51e25;
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .module-card {
+            background: #333;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border-top: 4px solid #e51e25;
+        }
+        
+        .module-card:hover {
+            transform: translateY(-5px);
+            background: #2a2a2a;
+        }
+        
+        .module-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        
+        .module-card h3 {
+            color: #e51e25;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .module-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .module-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .module-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #e51e25;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #e51e25;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .deliverables-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .deliverable-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .deliverable-item:hover {
+            transform: translateY(-5px);
+            border-left: 4px solid #e51e25;
+        }
+        
+        .deliverable-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        /* Carousel Styles */
+        .testimonial-carousel {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #e51e25;
+        }
+        
+        .testimonial-text {
+            font-size: 20px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #e51e25;
+            font-size: 18px;
+        }
+        
+        .carousel-nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .carousel-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #ddd;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-dot.active {
+            background: #e51e25;
+            width: 30px;
+            border-radius: 6px;
+        }
+        
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #e51e25;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-arrow:hover {
+            background: #c41e3a;
+        }
+        
+        .carousel-arrow.prev {
+            left: 10px;
+        }
+        
+        .carousel-arrow.next {
+            right: 10px;
+        }
+        
+        /* Microsoft vs Google Section */
+        .comparison-section {
+            background: #f8f8f8;
+            padding: 60px 20px;
+        }
+        
+        .comparison-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-header {
+            background: linear-gradient(135deg, #e51e25 0%, #c41e3a 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        
+        .comparison-col {
+            padding: 30px;
+        }
+        
+        .comparison-col.fail {
+            background: #fff3f3;
+            border-right: 2px solid #e51e25;
+        }
+        
+        .comparison-col.win {
+            background: #f0fff4;
+        }
+        
+        .comparison-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .comparison-title.fail {
+            color: #dc3545;
+        }
+        
+        .comparison-title.win {
+            color: #28a745;
+        }
+        
+        .comparison-list {
+            list-style: none;
+        }
+        
+        .comparison-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-col.fail .comparison-list li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .comparison-col.win .comparison-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        /* Bonus Section */
+        .bonus-section {
+            background: linear-gradient(135deg, #333 0%, #000 100%);
+            color: white;
+            padding: 60px 20px;
+        }
+        
+        .bonus-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .bonus-title {
+            text-align: center;
+            font-size: 40px;
+            color: #e51e25;
+            margin-bottom: 20px;
+        }
+        
+        .bonus-subtitle {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 50px;
+        }
+        
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .bonus-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #e51e25;
+            transition: all 0.3s ease;
+        }
+        
+        .bonus-card:hover {
+            background: rgba(229, 30, 37, 0.2);
+            transform: translateY(-10px);
+        }
+        
+        .bonus-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .bonus-card h3 {
+            color: #e51e25;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .bonus-value {
+            background: #e51e25;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        /* Why Choose Us - Redesigned */
+        .why-choose-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .benefit-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .benefit-card {
+            background: linear-gradient(135deg, white 0%, #f8f8f8 100%);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid #e51e25;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #e51e25 0%, #ff4757 100%);
+        }
+        
+        .benefit-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(229, 30, 37, 0.4);
+        }
+        
+        .benefit-icon-large {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-card h3 {
+            color: #e51e25;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .faq-item {
+            background: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 900px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            background: #333;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #e51e25;
+        }
+        
+        .faq-answer {
+            padding: 20px;
+            display: none;
+            line-height: 1.8;
+        }
+        
+        .faq-answer.active {
+            display: block;
+        }
+        
+        .footer {
+            background: #000;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero .subtitle { font-size: 18px; }
+            .programs-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 28px; }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .comparison-col.fail { border-right: none; border-bottom: 2px solid #e51e25; }
+            .carousel-arrow { display: none; }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>🚀 Transform Your Dubai Business with AI & Automation</h1>
+            <p class="subtitle">Professional Training for Construction & Interior Contracting Companies</p>
+            <p class="highlight">Make Your Team 30-50% More Efficient Without Installing Any ERP</p>
+            <div style="margin-top: 30px;">
+                <a href="#programs" class="cta-button">Explore Training Programs</a>
+                <a href="#contact" class="cta-button secondary">Book Free Consultation</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Are These Challenges Holding Your Business Back?</h2>
+            <div class="pain-points fade-in">
+                <div class="pain-card">
+                    <div class="pain-icon">⚠️</div>
+                    <h3>Labour Inefficiency</h3>
+                    <p>Team productivity stuck at 40-50% due to manual processes</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">💬</div>
+                    <h3>WhatsApp Chaos</h3>
+                    <p>Critical information lost in endless WhatsApp groups</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">📋</div>
+                    <h3>Documentation Lapses</h3>
+                    <p>Delayed project updates and missing client communications</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">💰</div>
+                    <h3>ERP Too Expensive</h3>
+                    <p>Can't afford AED 50,000+ for complex ERP systems</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">The Solution: Practical AI & Automation Training</h2>
+            <p style="text-align: center; font-size: 20px; max-width: 800px; margin: 0 auto 50px; color: #555;">
+                We bring proven automation frameworks from India's SME success stories to Dubai's construction and interior contracting industry. No theory. Only practical, implementable solutions.
+            </p>
+            
+            <div class="stats fade-in">
+                <div class="stat-card">
+                    <div class="stat-number">30-50%</div>
+                    <div class="stat-label">Productivity Increase</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2 Days</div>
+                    <div class="stat-label">Quick Training</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Practical & Actionable</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Zero</div>
+                    <div class="stat-label">ERP Investment Needed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section section-dark" id="programs">
+        <div class="container">
+            <h2 class="section-title">Choose Your Training Program</h2>
+            <div class="programs-grid fade-in">
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>🏢 Multi-Company Workshop</h3>
+                        <div style="text-decoration: line-through; opacity: 0.7; font-size: 24px; margin-top: 10px;">AED 1,000</div>
+                        <div class="program-price">AED 590</div>
+                        <div class="program-duration">Per Participant</div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 20px; display: inline-block; margin-top: 10px; font-weight: bold; font-size: 14px;">SAVE AED 410!</div>
+                    </div>
+                    <div class="program-body">
+                        <p style="margin-bottom: 20px; font-weight: bold; color: #e51e25;">Join 10-20 Companies in Dubai</p>
+                        <ul class="program-features">
+                            <li>1-Day or 2-Day Options Available</li>
+                            <li>Google Workspace Mastery</li>
+                            <li>AI for Business Operations</li>
+                            <li>Live Automation Demos</li>
+                            <li>Industry-Specific Use Cases</li>
+                            <li>Networking with Peers</li>
+                            <li>Training Certificate Included</li>
+                            <li>Automation Readiness Score</li>
+                        </ul>
+                        <a href="#contact" class="cta-button" style="width: 100%; margin-top: 20px; text-align: center;">Register Now</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header black">
+                        <h3>🏭 In-House Corporate Training</h3>
+                        <div style="text-decoration: line-through; opacity: 0.7; font-size: 24px; margin-top: 10px;">AED 12,000</div>
+                        <div class="program-price">AED 8,999</div>
+                        <div class="program-duration">Per Day (Full Company)</div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 20px; display: inline-block; margin-top: 10px; font-weight: bold; font-size: 14px;">SAVE AED 3,001!</div>
+                    </div>
+                    <div class="program-body">
+                        <p style="margin-bottom: 20px; font-weight: bold; color: #e51e25;">For Companies with 50-200+ Employees</p>
+                        <ul class="program-features">
+                            <li>Customized to Your Industry</li>
+                            <li>Train Multiple Departments</li>
+                            <li>Admin, HR, Procurement, Projects</li>
+                            <li>Finance & Sales Teams</li>
+                            <li>Site-to-Office Workflows</li>
+                            <li>Company-Specific Automations</li>
+                            <li>Team Certificates</li>
+                            <li>6-Month Support Included</li>
+                        </ul>
+                        <a href="#contact" class="cta-button" style="width: 100%; margin-top: 20px; text-align: center;">Get Custom Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section section-light">
+        <div class="container">
+            <h2 class="section-title">What You'll Master in 2 Days</h2>
+            <div class="modules-grid fade-in">
+                <div class="module-card">
+                    <div class="module-icon">📧</div>
+                    <h3>Google Workspace for Teams</h3>
+                    <ul class="module-list">
+                        <li>Gmail power workflows</li>
+                        <li>Drive for project documentation</li>
+                        <li>Calendar for site scheduling</li>
+                        <li>Forms for reporting & requests</li>
+                        <li>Sheets for BOQs & tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">🤖</div>
+                    <h3>AI for Business Operations</h3>
+                    <ul class="module-list">
+                        <li>Drafting BOQs & RFQs</li>
+                        <li>AI-based site reporting</li>
+                        <li>HR leave approval workflows</li>
+                        <li>Client proposals & estimates</li>
+                        <li>Performance tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">⚡</div>
+                    <h3>Live Automation Demos</h3>
+                    <ul class="module-list">
+                        <li>Site progress reporting</li>
+                        <li>Material request workflow</li>
+                        <li>Invoice filing automation</li>
+                        <li>WhatsApp broadcast systems</li>
+                        <li>GPS-based attendance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Microsoft vs Google Comparison Section -->
+    <div class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Why Microsoft Apps Fail & Google Apps Win for SMEs</h2>
+            <div class="comparison-container fade-in">
+                <div class="comparison-header">
+                    <h3 style="font-size: 28px; margin-bottom: 10px;">The Real Difference</h3>
+                    <p>Why Dubai SMEs are switching from Microsoft to Google Workspace</p>
+                </div>
+                <div class="comparison-grid">
+                    <div class="comparison-col fail">
+                        <h4 class="comparison-title fail">❌ Microsoft Office (Excel, Outlook, etc.)</h4>
+                        <ul class="comparison-list">
+                            <li>Complex licensing costs per user</li>
+                            <li>Requires expensive IT infrastructure</li>
+                            <li>Desktop-first, mobile is secondary</li>
+                            <li>Limited real-time collaboration</li>
+                            <li>Frequent version conflicts</li>
+                            <li>Difficult automation for non-technical users</li>
+                            <li>Heavy software, slow performance</li>
+                            <li>Poor integration with modern tools</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-col win">
+                        <h4 class="comparison-title win">✓ Google Workspace (Gmail, Drive, Sheets)</h4>
+                        <ul class="comparison-list">
+                            <li>Simple, transparent pricing</li>
+                            <li>Works on any device, anywhere</li>
+                            <li>Mobile-first design for site teams</li>
+                            <li>Real-time collaboration built-in</li>
+                            <li>Auto-save, no version issues</li>
+                            <li>Easy automation with Apps Script</li>
+                            <li>Cloud-based, lightning fast</li>
+                            <li>Seamless integration with 1000+ tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">What Every Participant Receives</h2>
+            <div class="deliverables-grid fade-in">
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">🎓</div>
+                    <h3>Training Certificate</h3>
+                    <p>Professional certification for your portfolio</p>
+                </div>
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">📊</div>
+                    <h3>Automation Score</h3>
+                    <p>Your readiness rating (0-100)</p>
+                </div>
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">💬</div>
+                    <h3>VIP WhatsApp Group</h3>
+                    <p>Ongoing support & updates</p>
+                </div>
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">🎯</div>
+                    <h3>Custom Blueprint</h3>
+                    <p>Your company's automation roadmap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bonus Section -->
+    <div class="bonus-section">
+        <div class="bonus-container">
+            <h2 class="bonus-title">🎁 EXCLUSIVE FREE BONUS PACKAGE</h2>
+            <p class="bonus-subtitle">Worth Over AED 15,000 - Yours Absolutely FREE</p>
+            <div class="bonus-grid fade-in">
+                <div class="bonus-card">
+                    <div class="bonus-icon">🧠</div>
+                    <h3>Mind Capture Tool</h3>
+                    <p>Revolutionary mind-mapping and idea organization system for rapid project planning</p>
+                    <div class="bonus-value">FREE</div>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-icon">🔗</div>
+                    <h3>Dynamic Links Organizer</h3>
+                    <p>Never lose important links again - intelligent link management system</p>
+                    <div class="bonus-value">FREE</div>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-icon">🤖</div>
+                    <h3>CEOITBOX Proprietary AI Tool</h3>
+                    <p>Exclusive access to our custom AI assistant built specifically for construction SMEs</p>
+                    <div class="bonus-value">FREE</div>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-icon">📚</div>
+                    <h3>Complete GWS Learning Module</h3>
+                    <p>Organized video library covering every Google Workspace app with step-by-step tutorials</p>
+                    <div class="bonus-value">FREE</div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 24px; color: #e51e25; font-weight: bold;">Total Bonus Value: AED 15,000+</p>
+                <p style="font-size: 18px; margin-top: 10px;">All participants get lifetime access to these tools!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Success Stories Carousel -->
+    <div class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Success Stories from Dubai Companies</h2>
+            <div class="testimonial-carousel fade-in">
+                <button class="carousel-arrow prev" onclick="moveCarousel(-1)">‹</button>
+                <div class="carousel-container" id="carouselContainer">
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"After implementing just 3 automations from the workshop, we reduced our project reporting time from 4 hours to 15 minutes. Our clients now receive daily updates automatically. This training paid for itself in the first week!"</p>
+                        <p class="testimonial-author">— Ahmed Al Mansouri, Operations Manager, Interior Contracting Company, Dubai</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"Our procurement team was drowning in manual purchase orders and vendor emails. The Google Workspace automation we learned completely transformed our workflow. We now process 3x more orders with the same team size."</p>
+                        <p class="testimonial-author">— Fatima Hassan, Procurement Head, Construction Materials Supplier, Dubai</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"I was skeptical about 'no-code' automation, but the live demos convinced me. Within 2 weeks, we automated our site attendance, material requests, and daily progress reports. Our project managers now focus on actual construction, not paperwork."</p>
+                        <p class="testimonial-author">— Rajesh Kumar, CEO, Building Contracting Firm, Dubai</p>
+                    </div>
+                </div>
+                <button class="carousel-arrow next" onclick="moveCarousel(1)">›</button>
+                <div class="carousel-nav">
+                    <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+                    <span class="carousel-dot" onclick="goToSlide(1)"></span>
+                    <span class="carousel-dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Why Choose Us - Redesigned -->
+    <div class="section section-dark">
+        <div class="why-choose-container">
+            <h2 class="section-title">Why Dubai Companies Choose Us</h2>
+            <div class="benefit-row fade-in">
+                <div class="benefit-card">
+                    <div class="benefit-icon-large">🎯</div>
+                    <h3>Industry-Specific Expertise</h3>
+                    <p>Built exclusively for construction & interior contracting - not generic corporate training. Every example, every automation is from YOUR industry.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon-large">⚡</div>
+                    <h3>Immediate Implementation</h3>
+                    <p>Walk out with 5 working automations. No waiting, no theory - you see results before you leave the training room.</p>
+                </div>
+            </div>
+            <div class="benefit-row fade-in">
+                <div class="benefit-card">
+                    <div class="benefit-icon-large">💰</div>
+                    <h3>ROI-Focused Training</h3>
+                    <p>Mid-level investment with enterprise-level results. Our clients recover their training costs within 2-4 weeks through efficiency gains.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon-large">🚀</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Trained 5000+ entrepreneurs in India, now bringing battle-tested frameworks to Dubai's construction sector.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Do we need technical knowledge?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    No technical knowledge required! Our training is designed for business professionals, not IT experts. If you can use WhatsApp and email, you can implement these automations.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What if we already use some Google tools?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Perfect! We'll show you advanced features you're likely not using. Most companies use only 10-20% of Google Workspace capabilities. We'll unlock the other 80%.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Can this replace our ERP plans?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    For most SMEs (under 200 employees), our automation framework eliminates the need for expensive ERP systems. You get 70-80% of ERP benefits at 5-10% of the cost.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What happens after the training?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    You receive ongoing support through our VIP WhatsApp group, plus a free 15-minute consultation to discuss implementation. Many companies upgrade to our automation implementation services.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Is this suitable for small teams (10-30 people)?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely! Small teams often see the biggest impact because they can implement changes quickly. Our workshop has delivered results for teams as small as 8 people.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section section-dark" id="contact">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Ready to Transform Your Business?</h2>
+            <p style="font-size: 20px; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Join the next workshop or schedule an in-house training for your team. Limited seats available for each batch.
+            </p>
+            <div style="margin: 40px 0;">
+                <a href="mailto:info@yourdomain.com" class="cta-button">📧 Email Us for Details</a>
+                <a href="tel:+971XXXXXXXXX" class="cta-button secondary">📞 Call for Registration</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p style="font-size: 18px; margin-bottom: 15px;"><strong>Professional AI & Automation Training for Dubai SMEs</strong></p>
+            <p style="opacity: 0.8;">Specializing in Construction & Interior Contracting Industries</p>
+            <p style="margin-top: 20px; opacity: 0.7;">© 2024 Your Company Name. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        
+        function moveCarousel(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            updateCarousel();
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+        
+        function updateCarousel() {
+            const container = document.getElementById('carouselContainer');
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        // Auto-rotate carousel every 5 seconds
+        setInterval(() => {
+            moveCarousel(1);
+        }, 5000);
+        
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('span');
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.querySelector('span').textContent = '+';
+                }
+            });
+            answer.classList.toggle('active');
+            icon.textContent = answer.classList.contains('active') ? '−' : '+';
+        }
+        
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
